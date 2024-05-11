@@ -1,0 +1,82 @@
+[Project]
+FileName=CNT.dev
+Name=CNT For Windows
+Type=1
+Ver=2
+ObjFiles=
+Includes=
+Libs=
+PrivateResource=CNT_private.rc
+ResourceIncludes=
+MakeIncludes=
+Compiler=
+CppCompiler=
+Linker=
+IsCpp=1
+Icon=
+ExeOutput=Out
+ObjectOutput=Obj
+LogOutput=Dev Log
+LogOutputEnabled=1
+OverrideOutput=1
+OverrideOutputName=cnt.exe
+HostApplication=
+UseCustomMakefile=0
+CustomMakefile=
+CommandLine=
+Folders=MainCpp,Main'H'File
+IncludeVersionInfo=1
+SupportXPThemes=0
+CompilerSet=0
+CompilerSettings=0000000000000000001000000
+UnitCount=3
+
+[VersionInfo]
+Major=1
+Minor=0
+Release=0
+Build=37
+LanguageID=2052
+CharsetID=1252
+CompanyName=Company Name
+FileVersion=1.0.0.37
+FileDescription=CCNTSS For CNT In Windows
+InternalName=CNT For Windows
+LegalCopyright=Legal Copyright
+LegalTrademarks=Legal Trademarks
+OriginalFilename=CCNTSS Server For CNT In Windows
+ProductName=Product Name
+ProductVersion=1.0.0.37
+AutoIncBuildNr=1
+SyncProduct=1
+
+[Unit1]
+FileName=File\main.cpp
+CompileCpp=1
+Folder=MainCpp
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit2]
+FileName=File\cnt.h
+CompileCpp=1
+Folder=Main'H'File
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit3]
+FileName=File\language.h
+CompileCpp=1
+Folder=Main'H'File
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
