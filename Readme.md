@@ -8,4 +8,5 @@ CNT 是一个部分免费开源软件，以 『用户体验』 为宗旨，加�
 ### 针对于用户
 使用基于 CNT 的 CCNTSS SERVER「预发行程序」 可以让用户获得充分的体验。「<a href="https://github.com/TaimWay/CCNTSS_Server-Windows">CCNTSS For Windows</a>」也是一个部分免费开源软件，是基于 CNT-API 开发的可以让用户便捷使用电脑的开源程序。「预发行」
 ### 针对于开发者
-使用 CNT 可以减少你的开发时间和开发成本 {% del 「预发行」版本 %} 
+使用 CNT 可以减少你的开发时间和开发成本 
+
