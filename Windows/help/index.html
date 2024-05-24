@@ -5,18 +5,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>CNT | Help</title>
         <link rel="stylesheet" href="./system/index.css">
+        <script src="./system/index.js"></script>
+        <script>
+            class git{
+                constructor(){
+                    this.link = {
+                        github: "https://github.com/TaimWay/CNT"
+                    };
+                }
+            }
+            gits = new git();
+        </script>
     </head>
     <body>
-        <section class="main">
-            <h1 class="title">Welcome use CNT</h1>
-            <p class="subtitle">CNT For your computer</p>
-
-            <div class="content">
-                <h2>Content</h2>
-                <ul class="content">
-                    <li class="content-list"></li>
-                </ul>
+        <div class="header">
+            <div class="text">
+                <canvas class="Logo"></canvas>
             </div>
-        </section>
+            <div class="button">
+                <input type="button" value="Github主页" onclick="program.link(gits.link.github);">
+            </div>
+            
+        </div>
+        
     </body>
 </html>

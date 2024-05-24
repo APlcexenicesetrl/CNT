@@ -10,15 +10,26 @@ html,body{
     color: #fff;
     font-family: 'Courier New', Courier, monospace;
 }
-
-.title{
-    font-size: 50px;
-    text-align: center;
-    margin-top: 100px;
+.header{
+    padding: 2px;
+    background-color: #666;
+    display: flex;
 }
-.subtitle{
-    font-size: 25px;
-    text-align: center;
-    margin-top: -30px;
+.header .button{
+    padding: 15px;
+    margin-left: auto;
 }
-
+input[type="button"]{
+    background-color: #3083e4;
+    border: none;
+    border-radius: 5px;
+    width: auto;
+    height: 50px;
+    font-size: 20px;
+}
+.Logo{
+    height: 80px;
+    width: 150px;
+    background-image: url("./Logo.png");
+    background-size: 150px;
+}
