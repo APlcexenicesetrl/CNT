@@ -3,9 +3,6 @@ using namespace std;
 //--Console Function
 class console{
 	private:
-		void log_File(string text,string filePaths){
-			
-		}
 	public:
 		void log(string text){
 			//Print
@@ -19,20 +16,26 @@ class console{
 					cout<<text[i];
 				}
 			}
-			//Out to the file
-			try {
-		        Logger logger(".\\log\\2024-5-25-1.txt");
-		
-		        logger.log(LogLevel::INFO, "This is an informational message.");
-		        logger.log(LogLevel::WARNING, "This is a warning message.");
-		        logger.log(LogLevel::ERROR, "This is an error message.");
-		    } catch (const std::exception& e) {
-		        std::cerr << "Logging failed: " << e.what() << std::endl;
-		    }
+			//Key to the file
+			try{
+				
+			}
 		}
 		void pause(){
 			printf("\nStop run of the program\Press any key go on...\n------Stop------\n");
 			_getch();
+		}
+		void error(string errText){
+			log("Create MessageText and assignment");
+			
+			string MessageText = "Error\nCNT throws an exception\nError Return Text: ";
+			MessageText += errText;
+			MessageText += "\nPlace repair the CNT based on the error message.";
+			log("Windows Function -> MessageBox > NULL, MessageText,'CNT.Error.Message',MessageImage_Error + MessageButton_OK");
+			MessageBox(NULL,MessageText.c_str(),"CNT.Error.Message",16+MB_OK);
+			
+			pause();
+			exit(400);
 		}
 };
 
@@ -96,14 +99,7 @@ class program{
 					}
 				}
 				else{
-					console.log("Create MessageText and assignment");
-					string MessageText = "Error\nCNT throws an exception\nError Return Text: ";
-					MessageText += err.what();
-					MessageText += "\nPlace repair the CNT based on the error message.";
-					console.log("Windows Function -> MessageBox > NULL, MessageText,'CNT.Error.Message',MessageImage_Error + MessageButton_OK");
-					MessageBox(NULL,MessageText.c_str(),"CNT.Error.Message",16+MB_OK);
-					pause();
-					exit(400);
+					console.error()
 				}
 		    }
 		}

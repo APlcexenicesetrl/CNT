@@ -7,25 +7,21 @@
         <link rel="stylesheet" href="./system/index.css">
         <script src="./system/index.js"></script>
         <script>
-            class git{
-                constructor(){
-                    this.link = {
-                        github: "https://github.com/TaimWay/CNT"
-                    };
+            var data = {
+                link: {
+                    github: "https://github.com/TaimWay/CNT"
                 }
             }
-            gits = new git();
-
-            
+            //This Code is save web data
         </script>
     </head>
     <body>
         <div class="header">
             <div class="text">
-                <canvas class="Logo"></canvas>
+                <canvas class="Logo" onclick="program.link('./index.html')"></canvas>
             </div>
             <div class="button">
-                <input type="button" value="Github主页" onclick="program.link(gits.link.github);">
+                <input type="button" value="Go Github" onclick="program.link(data.link.github);">
             </div>
             
         </div>

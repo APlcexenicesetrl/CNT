@@ -1,0 +1,15 @@
+4. **Table of Contents**: Helps in quick navigation through the README.
+
+5. **Installation**: Provides installation instructions via pip and manual installation.
+
+6. **Usage**: A quick example to get started with the toolkit.
+
+7. **Examples**: Specific examples for different functionalities.
+
+8. **Contributing**: Guidelines for contributing to the project.
+
+9. **License**: Information about the MIT license.
+
+10. **Contact**: Contact information for further support.
+
+This README structure ensures clarity, provides essential information, and encourages community participation. 
