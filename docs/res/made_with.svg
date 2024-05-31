@@ -1,0 +1,23 @@
+<svg width="229.99999999999997" height="50.99999999999999" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="MADE WITH">
+ <title>MADE WITH</title>
+ <defs>
+  <filter id="svg_1_blur">
+   <feGaussianBlur in="SourceGraphic" stdDeviation="1.5"/>
+  </filter>
+  <filter id="svg_7_blur">
+   <feGaussianBlur in="SourceGraphic" stdDeviation="1"/>
+  </filter>
+  <filter id="svg_9_blur">
+   <feGaussianBlur in="SourceGraphic" stdDeviation="1"/>
+  </filter>
+ </defs>
+ <g>
+  <title>Layer 1</title>
+  <g filter="url(#svg_1_blur)" stroke-width="2" shape-rendering="crispEdges" id="svg_1" stroke="null">
+   <rect width="169.33389" height="50.51507" fill="#fe7d37" id="svg_2" y="0" x="0" stroke="null"/>
+   <rect x="169.33389" width="60.88909" height="50.51507" fill="#e05d44" id="svg_3" y="0" stroke="null"/>
+  </g>
+  <path filter="url(#svg_7_blur)" fill="#ffffff" d="m200.01026,18.64355c7.09828,-17.7804 34.90957,0 0,22.86052c-34.90957,-22.86052 -7.09828,-40.64092 0,-22.86052z" id="svg_7"/>
+  <text filter="url(#svg_9_blur)" fill="#ffffff" x="8.14296" y="37.98613" id="svg_9" stroke-width="0" font-size="24" font-family="Verdana,Geneva,DejaVu Sans,sans-serif'" text-anchor="start" xml:space="preserve" stroke="null" transform="matrix(1.00485 0 0 0.949092 0.300174 -2.61843)" font-weight="bold" font-style="normal">MADE WITH</text>
+ </g>
+</svg>

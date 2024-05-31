@@ -3,17 +3,18 @@ html,body{
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #333;
+    background-color: #fff;
 }
 *,p,span{
     transition: 0.5s;
-    color: #fff;
+    color: #efefef;
     font-family: 'Courier New', Courier, monospace;
 }
 .header{
     padding: 2px;
-    background-color: #666;
+    background-color: #f7f9fe;
     display: flex;
+    border-radius: 0 0 10px 10px;
 }
 .header .button{
     padding: 15px;

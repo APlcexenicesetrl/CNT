@@ -1,0 +1,15 @@
+<svg width="200" height="50" xmlns="http://www.w3.org/2000/svg" aria-label="LICENSE: MIT" role="img">
+ <title>LICENSE: MIT</title>
+
+ <g>
+  <title>Layer 1</title>
+  <g stroke="null" id="svg_1" shape-rendering="crispEdges">
+   <rect stroke="null" x="0" y="0" id="svg_2" fill="#555" height="50.64151" width="122.35832"/>
+   <rect stroke="null" y="0" id="svg_3" fill="#ffff00" height="50.64151" width="77.29091" x="122.35832"/>
+  </g>
+  <g stroke="null" id="svg_4" font-size="100" text-rendering="geometricPrecision" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" text-anchor="middle" fill="#fff">
+   <text stroke="null" id="svg_5" fill="#fff" textLength="517.5" y="175" x="397.35875" transform="matrix(0.175472 0 0 0.192793 -12.0755 -0.451593)">LICENSE</text>
+   <text stroke="null" id="svg_6" font-weight="bold" fill="#fff" textLength="247.5" y="175" x="1005.90219" transform="matrix(0.175472 0 0 0.192793 -12.0755 -0.451593)">MIT</text>
+  </g>
+ </g>
+</svg>

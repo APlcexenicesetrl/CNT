@@ -29,24 +29,24 @@ IncludeVersionInfo=1
 SupportXPThemes=0
 CompilerSet=0
 CompilerSettings=0000000000000000001000000
-UnitCount=3
+UnitCount=6
 
 [VersionInfo]
 Major=1
 Minor=0
 Release=0
-Build=37
+Build=45
 LanguageID=2052
 CharsetID=1252
 CompanyName=Company Name
-FileVersion=1.0.0.37
+FileVersion=1.0.0.45
 FileDescription=CCNTSS For CNT In Windows
 InternalName=CNT For Windows
 LegalCopyright=Legal Copyright
 LegalTrademarks=Legal Trademarks
 OriginalFilename=CCNTSS Server For CNT In Windows
 ProductName=Product Name
-ProductVersion=1.0.0.37
+ProductVersion=1.0.0.45
 AutoIncBuildNr=1
 SyncProduct=1
 
@@ -74,6 +74,36 @@ BuildCmd=
 FileName=File\language.h
 CompileCpp=1
 Folder=Main'H'File
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit4]
+FileName=File\program.cpp
+CompileCpp=1
+Folder=MainCpp
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit5]
+FileName=File\alldocument.h
+CompileCpp=1
+Folder=Main'H'File
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit6]
+FileName=File\Console-Log.cpp
+CompileCpp=1
+Folder=MainCpp
 Compile=1
 Link=1
 Priority=1000

@@ -119,5 +119,6 @@
 //Private H File
 #include <windows.h>
 #include <conio.h>
-#include "cnt.h"
 #include "language.h"
+#include "cnt.h"
+

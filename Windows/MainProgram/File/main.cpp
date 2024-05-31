@@ -1,4 +1,6 @@
 #include "alldocument.h"
+#include "program.cpp"
+
 using namespace std;
 
 /*system("pause");*/

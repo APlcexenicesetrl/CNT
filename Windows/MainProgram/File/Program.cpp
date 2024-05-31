@@ -1,4 +1,43 @@
+#include "alldocument.h"
+using namespace std;
+//--Console Function
+class console{
+	private:
+		void log_File(string text,string filePaths){
+			
+		}
+	public:
+		void log(string text){
+			//Print
+			printf("\n[Log]: ");
+			for(var i = 0;i<text.size();i++){
+				if(text[i]=='\n'){
+					if(text[i+1]!='\0') cout<<endl<<"[Log]: ";
+					else break;
+				} 
+				else{
+					cout<<text[i];
+				}
+			}
+			//Out to the file
+			try {
+		        Logger logger(".\\log\\2024-5-25-1.txt");
+		
+		        logger.log(LogLevel::INFO, "This is an informational message.");
+		        logger.log(LogLevel::WARNING, "This is a warning message.");
+		        logger.log(LogLevel::ERROR, "This is an error message.");
+		    } catch (const std::exception& e) {
+		        std::cerr << "Logging failed: " << e.what() << std::endl;
+		    }
+		}
+		void pause(){
+			printf("\nStop run of the program\Press any key go on...\n------Stop------\n");
+			_getch();
+		}
+};
+
 //--Program Function
+
 class program{
 	private:
 		
