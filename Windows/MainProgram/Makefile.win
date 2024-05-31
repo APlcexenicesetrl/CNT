@@ -5,8 +5,8 @@ CPP      = g++.exe -D__DEBUG__
 CC       = gcc.exe -D__DEBUG__
 WINDRES  = windres.exe
 RES      = Obj/CNT_private.res
-OBJ      = Obj/main.o Obj/program.o Obj/Console-Log.o $(RES)
-LINKOBJ  = Obj/main.o Obj/program.o Obj/Console-Log.o $(RES)
+OBJ      = Obj/main.o Obj/program.o $(RES)
+LINKOBJ  = Obj/main.o Obj/program.o $(RES)
 LIBS     = -L"E:/Program Files (x86)/DevCpp/MinGW64/lib" -L"E:/Program Files (x86)/DevCpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -g3
 INCS     = -I"E:/Program Files (x86)/DevCpp/MinGW64/include" -I"E:/Program Files (x86)/DevCpp/MinGW64/x86_64-w64-mingw32/include" -I"E:/Program Files (x86)/DevCpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
 CXXINCS  = -I"E:/Program Files (x86)/DevCpp/MinGW64/include" -I"E:/Program Files (x86)/DevCpp/MinGW64/x86_64-w64-mingw32/include" -I"E:/Program Files (x86)/DevCpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"E:/Program Files (x86)/DevCpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
@@ -30,9 +30,6 @@ Obj/main.o: File/main.cpp
 
 Obj/program.o: File/program.cpp
 	$(CPP) -c File/program.cpp -o Obj/program.o $(CXXFLAGS)
-
-Obj/Console-Log.o: File/Console-Log.cpp
-	$(CPP) -c File/Console-Log.cpp -o Obj/Console-Log.o $(CXXFLAGS)
 
 Obj/CNT_private.res: CNT_private.rc 
 	$(WINDRES) -i CNT_private.rc --input-format=rc -o Obj/CNT_private.res -O coff 
