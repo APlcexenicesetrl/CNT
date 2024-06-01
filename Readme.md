@@ -3,11 +3,11 @@
 <h1>CNT</h1>
 A portable program for development and use.<br><br>
 
-[![madewithlove](./docs/res/made_with.svg)](https://github.com/TaimWay/CNT)
+
+[![madewithlove](./docs/res/made_with.svg)](https://github.com/TaimWay/CNT) [![Developers](https://img.shields.io/badge/Developers-TaimWay-brightgreen.svg)]    ![Version](https://img.shields.io/badge/version-1.0.0-brightgreen.svg)  ![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/TaimWay/CNT/blob/main/LICENSE)
 
 <!-- <img src="./help/itemCover.jgg" /><br> -->
 
-[![License](./docs/res/license__mit.svg)](https://github.com/TaimWay/CNT/blob/main/LICENSE)
 
 [**English**](./README.md) | [**中文简体**](./docs/Readme(zh-cn).md)
 
@@ -16,6 +16,7 @@ A portable program for development and use.<br><br>
 ---
 
 # Introduction
+
 **Welcome to use 『CNT』**
 
 You can use 『CNT』 to simplify your development and reduce your development time and costs

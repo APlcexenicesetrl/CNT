@@ -1,0 +1,29 @@
+﻿<Window x:Class="CNT_GUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CNT_GUI"
+        mc:Ignorable="d"
+        Title="CNT GUI" Height="600" Width="1200" Icon="/Resources/imgs/program-icon.ico" Background="{x:Null}" Foreground="{x:Null}" WindowStyle="ThreeDBorderWindow">
+    <Border CornerRadius="0,0,10,10" Background="White">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20px"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Border Grid.Row="0" BorderBrush="#FF333333" Width="1200">
+                <Menu DockPanel.Dock="Top" FontSize="15px" Background="White" Foreground="#333" Height="20px" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <MenuItem Header="_File">
+                        <MenuItem Header="_New" Click="Menu_New" />
+                        <MenuItem Header="_Open" Click="Menu_Open" />
+                        <MenuItem Header="_Save" Click="Menu_Save" />
+                        <Separator />
+                        <MenuItem Header="E_xit" Click="Menu_Exit" />
+                    </MenuItem>
+                </Menu>
+            </Border>
+            <Grid Grid.Row="1"></Grid>
+        </Grid>
+    </Border>
+</Window>
