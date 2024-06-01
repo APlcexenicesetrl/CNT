@@ -10,11 +10,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="ICON.ico" />
+    <Page Include="App.xaml" />
   </ItemGroup>
-
   <ItemGroup>
-    <Resource Include="ICON.ico" />
+    <Resource Include="Resources\imgs\program-icon.ico" />
   </ItemGroup>
 
 </Project>

@@ -9,6 +9,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace CNT_GUI
 {
     /// <summary>
@@ -16,19 +17,36 @@ namespace CNT_GUI
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
-        {
-            InitializeComponent();
-        }
 
         private void Exit(object sender, RoutedEventArgs e)
         {
-            Environment.Exit(-400);
+            Environment.Exit(-200);
         }
 
         private void Window_Move(object sender, MouseButtonEventArgs e)
         {
             this.DragMove();
+        }
+
+        //Menu Function
+        private void Menu_New(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("New command executed");
+        }
+
+        private void Menu_Open(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Open command executed");
+        }
+
+        private void Menu_Save(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Save command executed");
+        }
+
+        private void Menu_Exit(object sender, RoutedEventArgs e)
+        {
+            Environment.Exit(-200);
         }
     }
 }

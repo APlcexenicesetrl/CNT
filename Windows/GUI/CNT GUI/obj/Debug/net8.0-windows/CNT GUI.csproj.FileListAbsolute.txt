@@ -3,11 +3,9 @@ F:\APlcexenicesetrl\TaimWay\CNT\Windows\GUI\CNT GUI\bin\Debug\net8.0-windows\CNT
 F:\APlcexenicesetrl\TaimWay\CNT\Windows\GUI\CNT GUI\bin\Debug\net8.0-windows\CNT GUI.runtimeconfig.json
 F:\APlcexenicesetrl\TaimWay\CNT\Windows\GUI\CNT GUI\bin\Debug\net8.0-windows\CNT GUI.dll
 F:\APlcexenicesetrl\TaimWay\CNT\Windows\GUI\CNT GUI\bin\Debug\net8.0-windows\CNT GUI.pdb
-F:\APlcexenicesetrl\TaimWay\CNT\Windows\GUI\CNT GUI\obj\Debug\net8.0-windows\MainWindow.g.cs
 F:\APlcexenicesetrl\TaimWay\CNT\Windows\GUI\CNT GUI\obj\Debug\net8.0-windows\App.g.cs
 F:\APlcexenicesetrl\TaimWay\CNT\Windows\GUI\CNT GUI\obj\Debug\net8.0-windows\CNT GUI_MarkupCompile.cache
 F:\APlcexenicesetrl\TaimWay\CNT\Windows\GUI\CNT GUI\obj\Debug\net8.0-windows\CNT GUI_MarkupCompile.lref
-F:\APlcexenicesetrl\TaimWay\CNT\Windows\GUI\CNT GUI\obj\Debug\net8.0-windows\MainWindow.baml
 F:\APlcexenicesetrl\TaimWay\CNT\Windows\GUI\CNT GUI\obj\Debug\net8.0-windows\CNT GUI.g.resources
 F:\APlcexenicesetrl\TaimWay\CNT\Windows\GUI\CNT GUI\obj\Debug\net8.0-windows\CNT GUI.GeneratedMSBuildEditorConfig.editorconfig
 F:\APlcexenicesetrl\TaimWay\CNT\Windows\GUI\CNT GUI\obj\Debug\net8.0-windows\CNT GUI.AssemblyInfoInputs.cache
@@ -19,3 +17,5 @@ F:\APlcexenicesetrl\TaimWay\CNT\Windows\GUI\CNT GUI\obj\Debug\net8.0-windows\ref
 F:\APlcexenicesetrl\TaimWay\CNT\Windows\GUI\CNT GUI\obj\Debug\net8.0-windows\CNT GUI.pdb
 F:\APlcexenicesetrl\TaimWay\CNT\Windows\GUI\CNT GUI\obj\Debug\net8.0-windows\CNT GUI.genruntimeconfig.cache
 F:\APlcexenicesetrl\TaimWay\CNT\Windows\GUI\CNT GUI\obj\Debug\net8.0-windows\ref\CNT GUI.dll
+F:\APlcexenicesetrl\TaimWay\CNT\Windows\GUI\CNT GUI\obj\Debug\net8.0-windows\file\Main.g.cs
+F:\APlcexenicesetrl\TaimWay\CNT\Windows\GUI\CNT GUI\obj\Debug\net8.0-windows\file\Main.baml
