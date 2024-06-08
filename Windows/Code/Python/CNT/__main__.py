@@ -1,10 +1,5 @@
-import tkinter as tk
-import Component
+import progress
 
-root = tk.Tk()
-root.title("CNT About")
-root.geometry("400x300")
-
-Component.CreateComponent()
-
-root.mainloop()
+main = progress.progress(0, 100, "Yellow&Red")
+for i in range(100):
+    main.setup(1)
