@@ -131,3 +131,13 @@ input[type="button"]:focus {
     /* background-color: #009dff; */
     z-index: 999;
 }
+.page2 .pmain .winbox{
+    width: 80vw;
+    height: 70vh;
+    display: flex;
+    margin: auto;
+    border-radius: 10px;
+    /* margin-top: -80px; */
+    /* background-color: #009dff; */
+    border: 2px solid #666;
+}

@@ -1,12 +1,18 @@
 // CNT - Copyrights (C) TaimWay
 class program{
     constructor(){
-        var link = {
-            githubHome: 'https://github.com/TaimWay/CNT',
-            githubReadmeFile: 'https://github.com/TaimWay/CNT/blob/main/Readme.md'
+        this.link = {
+            github: {
+                home: 'https://github.com/TaimWay/CNT',
+                File: {
+                    ReadmeFile: 'https://github.com/TaimWay/CNT/blob/main/Readme.md',
+                    config: 'https://raw.githubusercontent.com/TaimWay/CNT/main/config-server.js'
+                }
+            }
         };
-        this.link = link;
         this.pageNumber = 4;
+        this.pageStatus = 0;
+        
     }
     error(errorModule, errorCode, errorMess){
         if(errorMess == null || errorMess == undefined) errorMess = "An unknown or undeclared error message";
@@ -28,13 +34,25 @@ class program{
                 if(i == value) __document__.style = `height: 20px;background: rgb(115, 115, 115);`
                 else if(__document__ != null) __document__.style = "";
             }
+            this.pageStatus = value;
         }
         else{
             this.error("JumpFunction","404","You Point to a page that doesn't exist");
         }
     }
-    
+    pageJump(status){
+        if(status == 'up') this.jump(this.pageStatus - 1);
+        else if(status == 'down') this.jump(this.pageStatus + 1);
+    }
 }
 
 program = new program();
 program.jump(1);
+
+window.addEventListener('wheel', function(event) {
+    const deltaY = event.deltaY;
+    const direction = deltaY > 0 ? 'down' : 'up';
+    program.pageJump(direction);
+    //console.log(`Scrolling ${direction}: ${Math.abs(deltaY)} pixels`);
+
+});
