@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CNT | Help</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
+    </head>
+    <body>
+        <div class="app">
+            <div class="main" id="main">
+                <div class="page1" id="windows0">
+                    <div class="winText">
+                        <h1 class="title">CNT</h1>
+                        <p class="text">CNT For your computer</p>
+                    </div>
+                    <div class="button">
+                        <div class="top">
+                            <input type="button" value="Go head Github" class="link-button" onclick="program.goLink(program.link.githubHome)">
+                            <input type="button" value="View document" class="link-button" onclick="program.jump(2)">
+                        </div>
+                        <div class="buttom">
+                            <input type="button" value="More" class="down-button" onclick="program.jump(1)">
+                        </div>
+                    </div>
+                    <div class="background-imgs">
+                        <img src="../Res/index.png" alt="ERROR" class="indexPicture" onclick="program.goLink(program.link.githubReadmeFile)">
+                    </div>
+                </div>
+                <div class="page2" id="windows1">
+                    <div class="pmain">
+                        <h1 class="white f1">CNT</h1>
+                        <p class="white f5">A portable program for development and use.</p>
+                        <div class="tip">
+                            <img src="https://img.shields.io/badge/Developers-TaimWay-red.svg" alt="Place Wait">
+                            <img src="https://img.shields.io/badge/version-1.1.5.49-brightgreen.svg" alt="Place Wait">
+                            <img src="https://img.shields.io/badge/build%20Status-Active,%20open%20source-brightgreen.svg" alt="Place Wait">
+                            <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="Place Wait">
+                        </div>
+                    </div>
+                    <video src="../Res/StarLights.mp4" class="background" autoplay loop></video>
+                    
+                </div>
+            </div>
+            <div class="scrollbar">
+                <span class="item" id="page1" onclick="program.jump(0);" style="height: 20px;background: rgb(115, 115, 115);"></span>
+                <span class="item-space"></span>
+                <span class="item" id="page2" onclick="program.jump(1);"></span>
+                <span class="item-space"></span>
+                <span class="item" id="page3" onclick="program.jump(2);"></span>
+                <span class="item-space"></span>
+                <span class="item" id="page4" onclick="program.jump(3);"></span>
+            </div>
+        </div>
+    </body>
+    <script src="./script.js"></script>
+</html>

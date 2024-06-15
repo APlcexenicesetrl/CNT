@@ -3,7 +3,7 @@ html, body{
     padding: 0;
     background-color: rgb(255, 255, 255);
 }
-*, p, span{
+*, p, span, h1, h2, h3{
     transition: 0.5s;
     color: rgb(0, 0, 0);
     font-family: 'Courier New', Courier, monospace;
@@ -22,19 +22,24 @@ html, body{
 }
 .page1 .title{
     font-size: 50px;
+    color: black;
 }
 .page1 .text{
     font-size: 20px;
 }
-.page1 .indexPictrue{
-    width: 80vw;
-    margin-top: -90px;
-    border: 2px solid #666 ;
-    top: 50%;
-    position: fixed;
-    right: 10%;
+
+.page1 .background-imgs{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin-top: 35vh;
 }
-.page1 .githubLink{
+.page1 .indexPicture{
+    width: 80vw;
+    border: 2px solid #666 ;
+    cursor: pointer;
+}
+.page1 .link-button{
     width: 150px;
     height: 50px;
     background-color: #009dff;
@@ -43,6 +48,26 @@ html, body{
     color: #ffffff;
     font-size: 15px;
 }
+input[type="button"]:hover,
+input[type="button"]:focus {
+  opacity: .5;
+  transition: opacity .15s ease-in;
+}
+
+
+.page1 .down-button{
+    width: 150px;
+    height: 50px;
+    background-color: #009dff;
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 20px;
+
+    transform: translateY(60vh);
+}
+
+/* scrollbar */
 
 .scrollbar{
     position: fixed;
@@ -52,7 +77,8 @@ html, body{
     z-index: 9999;
     -webkit-transform: translateY(-66px);
     -ms-transform: translateY(-66px);
-    transform: translateY(-66px)
+    transform: translateY(-66px);
+    animation: scrollbar_exitAnimationidentifier 0.5s;
 }
 .scrollbar .item {
     display: block;
@@ -76,7 +102,32 @@ html, body{
 
 }
 
-.scrollbar .item[active]{
-    height: 20px;
-    background: rgb(115, 115, 115);
+@keyframes scrollbar_exitAnimationidentifier {
+    0%{
+        right: -10px;
+    }
+    100%{
+        right: 20px;
+    }
+}
+
+
+/* Page 2 */
+.page2{
+    text-align: center;
+    overflow: hidden;
+    height: 100vh;
+    background-color: rgba(5,13,35);
+}
+.page2 .background{
+    width: 100vw;
+
+}
+.page2 .pmain{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    color: #ffffff;
+    /* background-color: #009dff; */
+    z-index: 999;
 }

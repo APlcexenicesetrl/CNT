@@ -9,15 +9,15 @@
     <Border CornerRadius="0,0,10,10" Background="White">
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="20px"/>
+                <RowDefinition Height="25px"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <Border Grid.Row="0" BorderBrush="#FF333333" Width="1200">
-                <Menu DockPanel.Dock="Top" FontSize="15px" Background="White" Foreground="#333" Height="20px" HorizontalAlignment="Left" VerticalAlignment="Top">
-                    <MenuItem Header="_File">
-                        <MenuItem Header="_New" Click="Menu_New" />
-                        <MenuItem Header="_Open" Click="Menu_Open" />
-                        <MenuItem Header="_Save" Click="Menu_Save" />
+            <Border Grid.Row="0" BorderBrush="#FF333333" Width="1200" Height="25">
+                <Menu DockPanel.Dock="Top" FontSize="15px" Background="White" Foreground="#333" Height="25px" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <MenuItem Header="_Program">
+                        <MenuItem Header="_New Windows" Click="Menu_NewWindow" />
+                        <MenuItem Header="_Set" Click="Menu_Set" />
+
                         <Separator />
                         <MenuItem Header="E_xit" Click="Menu_Exit" />
                     </MenuItem>

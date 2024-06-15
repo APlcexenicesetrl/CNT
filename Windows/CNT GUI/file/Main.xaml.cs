@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Diagnostics;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -29,19 +30,15 @@ namespace CNT_GUI
         }
 
         //Menu Function
-        private void Menu_New(object sender, RoutedEventArgs e)
+        private void Menu_NewWindow(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("New command executed");
+            string exePath = Process.GetCurrentProcess().MainModule.FileName;
+            System.Diagnostics.Process.Start(exePath);
         }
 
-        private void Menu_Open(object sender, RoutedEventArgs e)
+        private void Menu_Set(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Open command executed");
-        }
-
-        private void Menu_Save(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("Save command executed");
         }
 
         private void Menu_Exit(object sender, RoutedEventArgs e)
