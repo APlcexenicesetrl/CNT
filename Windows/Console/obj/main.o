@@ -1,0 +1,210 @@
+	.file	"main.cpp"
+.lcomm _ZStL8__ioinit,1,1
+	.section	.text$_ZN7console3logESs,"x"
+	.linkonce discard
+	.align 2
+	.globl	_ZN7console3logESs
+	.def	_ZN7console3logESs;	.scl	2;	.type	32;	.endef
+	.seh_proc	_ZN7console3logESs
+_ZN7console3logESs:
+.LFB3608:
+	pushq	%rbp
+	.seh_pushreg	%rbp
+	movq	%rsp, %rbp
+	.seh_setframe	%rbp, 0
+	subq	$32, %rsp
+	.seh_stackalloc	32
+	.seh_endprologue
+	movq	%rcx, 16(%rbp)
+	movq	%rdx, 24(%rbp)
+	movq	24(%rbp), %rax
+	movq	%rax, %rdx
+	movq	.refptr._ZSt4cout(%rip), %rcx
+	call	_ZStlsIcSt11char_traitsIcESaIcEERSt13basic_ostreamIT_T0_ES7_RKSbIS4_S5_T1_E
+	nop
+	addq	$32, %rsp
+	popq	%rbp
+	ret
+	.seh_endproc
+	.def	__main;	.scl	2;	.type	32;	.endef
+	.section .rdata,"dr"
+	.align 8
+.LC0:
+	.ascii "APlcexenicesetrl CNT Console [Version 1.0.45.2]\12(C) APlcexenicesetrl CNT All rights reserved\12\0"
+	.text
+	.globl	main
+	.def	main;	.scl	2;	.type	32;	.endef
+	.seh_proc	main
+main:
+.LFB3609:
+	pushq	%rbp
+	.seh_pushreg	%rbp
+	pushq	%rbx
+	.seh_pushreg	%rbx
+	subq	$72, %rsp
+	.seh_stackalloc	72
+	leaq	128(%rsp), %rbp
+	.seh_setframe	%rbp, 128
+	.seh_endprologue
+	movl	%ecx, -32(%rbp)
+	movq	%rdx, -24(%rbp)
+	call	__main
+	leaq	-65(%rbp), %rax
+	movq	%rax, %rcx
+	call	_ZNSaIcEC1Ev
+	leaq	-65(%rbp), %rdx
+	leaq	-80(%rbp), %rax
+	movq	%rdx, %r8
+	leaq	.LC0(%rip), %rdx
+	movq	%rax, %rcx
+.LEHB0:
+	call	_ZNSsC1EPKcRKSaIcE
+.LEHE0:
+	leaq	-80(%rbp), %rdx
+	leaq	-81(%rbp), %rax
+	movq	%rax, %rcx
+.LEHB1:
+	call	_ZN7console3logESs
+.LEHE1:
+	leaq	-80(%rbp), %rax
+	movq	%rax, %rcx
+.LEHB2:
+	call	_ZNSsD1Ev
+.LEHE2:
+	leaq	-65(%rbp), %rax
+	movq	%rax, %rcx
+	call	_ZNSaIcED1Ev
+	movl	$0, %eax
+	jmp	.L8
+.L7:
+	movq	%rax, %rbx
+	leaq	-80(%rbp), %rax
+	movq	%rax, %rcx
+	call	_ZNSsD1Ev
+	jmp	.L5
+.L6:
+	movq	%rax, %rbx
+.L5:
+	leaq	-65(%rbp), %rax
+	movq	%rax, %rcx
+	call	_ZNSaIcED1Ev
+	movq	%rbx, %rax
+	movq	%rax, %rcx
+.LEHB3:
+	call	_Unwind_Resume
+.LEHE3:
+.L8:
+	addq	$72, %rsp
+	popq	%rbx
+	popq	%rbp
+	ret
+	.def	__gxx_personality_seh0;	.scl	2;	.type	32;	.endef
+	.seh_handler	__gxx_personality_seh0, @unwind, @except
+	.seh_handlerdata
+.LLSDA3609:
+	.byte	0xff
+	.byte	0xff
+	.byte	0x1
+	.uleb128 .LLSDACSE3609-.LLSDACSB3609
+.LLSDACSB3609:
+	.uleb128 .LEHB0-.LFB3609
+	.uleb128 .LEHE0-.LEHB0
+	.uleb128 .L6-.LFB3609
+	.uleb128 0
+	.uleb128 .LEHB1-.LFB3609
+	.uleb128 .LEHE1-.LEHB1
+	.uleb128 .L7-.LFB3609
+	.uleb128 0
+	.uleb128 .LEHB2-.LFB3609
+	.uleb128 .LEHE2-.LEHB2
+	.uleb128 .L6-.LFB3609
+	.uleb128 0
+	.uleb128 .LEHB3-.LFB3609
+	.uleb128 .LEHE3-.LEHB3
+	.uleb128 0
+	.uleb128 0
+.LLSDACSE3609:
+	.text
+	.seh_endproc
+	.def	__tcf_0;	.scl	3;	.type	32;	.endef
+	.seh_proc	__tcf_0
+__tcf_0:
+.LFB3659:
+	pushq	%rbp
+	.seh_pushreg	%rbp
+	movq	%rsp, %rbp
+	.seh_setframe	%rbp, 0
+	subq	$32, %rsp
+	.seh_stackalloc	32
+	.seh_endprologue
+	leaq	_ZStL8__ioinit(%rip), %rcx
+	call	_ZNSt8ios_base4InitD1Ev
+	nop
+	addq	$32, %rsp
+	popq	%rbp
+	ret
+	.seh_endproc
+	.def	_Z41__static_initialization_and_destruction_0ii;	.scl	3;	.type	32;	.endef
+	.seh_proc	_Z41__static_initialization_and_destruction_0ii
+_Z41__static_initialization_and_destruction_0ii:
+.LFB3658:
+	pushq	%rbp
+	.seh_pushreg	%rbp
+	movq	%rsp, %rbp
+	.seh_setframe	%rbp, 0
+	subq	$32, %rsp
+	.seh_stackalloc	32
+	.seh_endprologue
+	movl	%ecx, 16(%rbp)
+	movl	%edx, 24(%rbp)
+	cmpl	$1, 16(%rbp)
+	jne	.L10
+	cmpl	$65535, 24(%rbp)
+	jne	.L10
+	leaq	_ZStL8__ioinit(%rip), %rcx
+	call	_ZNSt8ios_base4InitC1Ev
+	leaq	__tcf_0(%rip), %rcx
+	call	atexit
+	nop
+.L10:
+	addq	$32, %rsp
+	popq	%rbp
+	ret
+	.seh_endproc
+	.def	_GLOBAL__sub_I_main;	.scl	3;	.type	32;	.endef
+	.seh_proc	_GLOBAL__sub_I_main
+_GLOBAL__sub_I_main:
+.LFB3660:
+	pushq	%rbp
+	.seh_pushreg	%rbp
+	movq	%rsp, %rbp
+	.seh_setframe	%rbp, 0
+	subq	$32, %rsp
+	.seh_stackalloc	32
+	.seh_endprologue
+	movl	$65535, %edx
+	movl	$1, %ecx
+	call	_Z41__static_initialization_and_destruction_0ii
+	nop
+	addq	$32, %rsp
+	popq	%rbp
+	ret
+	.seh_endproc
+	.section	.ctors,"w"
+	.align 8
+	.quad	_GLOBAL__sub_I_main
+	.ident	"GCC: (tdm64-1) 4.9.2"
+	.def	_ZStlsIcSt11char_traitsIcESaIcEERSt13basic_ostreamIT_T0_ES7_RKSbIS4_S5_T1_E;	.scl	2;	.type	32;	.endef
+	.def	_ZNSaIcEC1Ev;	.scl	2;	.type	32;	.endef
+	.def	_ZNSsC1EPKcRKSaIcE;	.scl	2;	.type	32;	.endef
+	.def	_ZNSsD1Ev;	.scl	2;	.type	32;	.endef
+	.def	_ZNSaIcED1Ev;	.scl	2;	.type	32;	.endef
+	.def	_Unwind_Resume;	.scl	2;	.type	32;	.endef
+	.def	_ZNSt8ios_base4InitD1Ev;	.scl	2;	.type	32;	.endef
+	.def	_ZNSt8ios_base4InitC1Ev;	.scl	2;	.type	32;	.endef
+	.def	atexit;	.scl	2;	.type	32;	.endef
+	.section	.rdata$.refptr._ZSt4cout, "dr"
+	.globl	.refptr._ZSt4cout
+	.linkonce	discard
+.refptr._ZSt4cout:
+	.quad	_ZSt4cout

@@ -1,0 +1,13 @@
+:root{
+    --background: #ffffff;
+    --color-text: #444444;
+    --header-background: #ffffff;
+
+    --button-color-text: #efefef;
+    --button-color-b1: #0084ff;
+    --button-color-b2: #8ba1ff;
+}
+html[draktheme]{
+    --background: #444444;
+    --color-text: #ffff;
+}

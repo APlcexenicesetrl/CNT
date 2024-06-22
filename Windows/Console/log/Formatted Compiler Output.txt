@@ -1,0 +1,5 @@
+2024/6/22 16:33:31: Creating log...
+
+		E:\Program Files (x86)\DevCpp\MinGW64\x86_64-w64-mingw32\bin\ld.exe	cannot open output file out/CNT Console.exe: No such file or directory
+		F:\APlcexenicesetrl\TaimWay\CNT\Windows\Console\collect2.exe	[Error] ld returned 1 exit status
+26		F:\APlcexenicesetrl\TaimWay\CNT\Windows\Console\Makefile.win	recipe for target '"out/CNT' failed

@@ -1,11 +1,11 @@
 html, body{
     margin: 0;
     padding: 0;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--color-background);
 }
 *, p, span, h1, h2, h3{
     transition: 0.5s;
-    color: rgb(0, 0, 0);
+    color: var(--color-texts);
     font-family: 'Courier New', Courier, monospace;
 }
 .app{
@@ -20,14 +20,6 @@ html, body{
     overflow: hidden;
     /* text-shadow; */
 }
-.page1 .title{
-    font-size: 50px;
-    color: black;
-}
-.page1 .text{
-    font-size: 20px;
-}
-
 .page1 .background-imgs{
     width: 100vw;
     height: 100vh;
@@ -42,10 +34,10 @@ html, body{
 .page1 .link-button{
     width: 150px;
     height: 50px;
-    background-color: #009dff;
+    background-color: var(--color-button);
     border: none;
     border-radius: 10px;
-    color: #ffffff;
+    color: var(--color-button-text);
     font-size: 15px;
 }
 input[type="button"]:hover,
@@ -58,10 +50,10 @@ input[type="button"]:focus {
 .page1 .down-button{
     width: 150px;
     height: 50px;
-    background-color: #009dff;
+    background-color: var(--color-button);
     border: none;
     border-radius: 10px;
-    color: #ffffff;
+    color: var(--color-button-text);
     font-size: 20px;
 
     transform: translateY(60vh);
@@ -129,7 +121,8 @@ input[type="button"]:focus {
     height: 100vh;
     color: #ffffff;
     /* background-color: #009dff; */
-    z-index: 999;
+    /* z-index: 999; */
+    overflow: hidden;
 }
 .page2 .pmain .winbox{
     width: 80vw;
@@ -140,4 +133,23 @@ input[type="button"]:focus {
     /* margin-top: -80px; */
     /* background-color: #009dff; */
     border: 2px solid #666;
+}
+.page2 .pmain .winbox .iframe-box{
+    width: 80vw;
+}
+
+/* Theme */
+:root{
+    --color-background: #fff;
+    --color-texts: black;
+    --page2-color-text: #fff;
+    --color-button: #009dff;
+    --color-button-text: #fff;
+}
+html[drak-theme]{
+    --color-background: #444444;
+    --color-texts: #fff;
+    --page2-color-text: ;
+    --color-button: rgb(122, 122, 122);
+    --color-button-text: #fff;
 }

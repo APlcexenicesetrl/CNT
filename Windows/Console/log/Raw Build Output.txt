@@ -1,0 +1,29 @@
+2024/6/22 16:33:31: Creating log...
+
+编译项目变更...
+--------
+- 项目文件名: F:\APlcexenicesetrl\TaimWay\CNT\Windows\Console\CNT Console.dev
+- 编译器名: TDM-GCC 4.9.2 64-bit Release
+
+生成 makefile...
+--------
+- 文件名: F:\APlcexenicesetrl\TaimWay\CNT\Windows\Console\Makefile.win
+- 资源文件: F:\APlcexenicesetrl\TaimWay\CNT\Windows\Console\obj\CNT_Console_private.res
+
+正在处理makefile...
+--------
+- makefile处理器: E:\Program Files (x86)\DevCpp\MinGW64\bin\mingw32-make.exe
+- 命令: mingw32-make.exe -f "F:\APlcexenicesetrl\TaimWay\CNT\Windows\Console\Makefile.win" all
+
+windres.exe -i CNT_Console_private.rc --input-format=rc -o obj/CNT_Console_private.res -O coff 
+g++.exe obj/main.o obj/CNT_Console_private.res -o "out/CNT Console.exe" -L"E:/Program Files (x86)/DevCpp/MinGW64/lib" -L"E:/Program Files (x86)/DevCpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
+E:/Program Files (x86)/DevCpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file out/CNT Console.exe: No such file or directory
+collect2.exe: error: ld returned 1 exit status
+F:\APlcexenicesetrl\TaimWay\CNT\Windows\Console\Makefile.win:26: recipe for target '"out/CNT' failed
+mingw32-make.exe: *** ["out/CNT] Error 1
+
+编译结果...
+--------
+- 错误: 1
+- 警告: 0
+- 编译时间: 0.84s

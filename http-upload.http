@@ -1,0 +1,13 @@
+POST https://aplcexenicesetrl.cn HTTP/1.1
+content-type: application/json
+{
+    "title":"http-upload",
+    "context":{
+        "name":"CNT",
+        "content":"CNT For Your Computer",
+        "version":"1.0.5.8",
+        "Developers":["TaimWay"],
+        "Status":"Active",
+        "license":"MIT"
+    }
+}

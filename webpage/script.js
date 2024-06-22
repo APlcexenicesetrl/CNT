@@ -47,7 +47,7 @@ class program{
 }
 
 program = new program();
-program.jump(1);
+//program.jump(1);
 
 window.addEventListener('wheel', function(event) {
     const deltaY = event.deltaY;

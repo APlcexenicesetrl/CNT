@@ -1,0 +1,62 @@
+@import url('./theme.css');
+html, body{
+    background-color: var();
+    margin: 0;
+    padding: 0;
+}
+*, span, p, h1, h2, h3, h4, h5 ,h6{
+    color: var(--color-text);
+    transition: 0.2s;
+    box-sizing: border-box;
+}
+
+/* a标签 */
+a:link {color: var(--tab-color-a); text-decoration:none;}
+a:active {color: var(--tab-color-a)}
+a:visited {color:var(--color-text);text-decoration:none;}
+a:hover {transform: scale(1.1px);}
+
+header{
+    background-color: var(--header-background);
+    height: 60px;
+    display: flex;
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid #333;
+    border-radius: 0 0 10px 10px;
+}
+header .pic{
+    width: 80px;
+    height: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: 20px;
+}
+header .pic h1{
+    height: 20px;
+    margin-top: 5px;
+}
+header nav{
+    height: 20px;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+header nav a{
+    width: 100px;
+    height: 20px;
+}
+header input[type="button"]{
+    margin: auto;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 150px;
+    background: linear-gradient(var(--button-color-b1), var(--button-color-b2));
+    color: var(--button-color-text);
+}
+header input[type="button"]:hover{
+    opacity: 50%;
+}

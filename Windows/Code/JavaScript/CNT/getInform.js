@@ -14,6 +14,6 @@ class getInformDocument{
 
     }
     getDocumentSize(){
-        document.
+        
     }
 }

@@ -1,0 +1,34 @@
+/* THIS FILE WILL BE OVERWRITTEN BY DEV-C++ */
+/* DO NOT EDIT! */
+
+#include <windows.h> // include for version info constants
+
+
+//
+// TO CHANGE VERSION INFORMATION, EDIT PROJECT OPTIONS...
+//
+1 VERSIONINFO
+FILEVERSION 1,0,0,14
+PRODUCTVERSION 1,0,0,14
+FILETYPE VFT_APP
+{
+  BLOCK "StringFileInfo"
+  {
+    BLOCK "040904E4"
+    {
+      VALUE "CompanyName", "CNT"
+      VALUE "FileVersion", "1.0.0.14"
+      VALUE "FileDescription", "CNT Console"
+      VALUE "InternalName", "CNT Console Command"
+      VALUE "LegalCopyright", "Copyrights (C) 2024"
+      VALUE "LegalTrademarks", "APlcexenicesetrl"
+      VALUE "OriginalFilename", "Original Filename"
+      VALUE "ProductName", "Product Name"
+      VALUE "ProductVersion", "1.0.0.14"
+    }
+  }
+  BLOCK "VarFileInfo"
+  {
+    VALUE "Translation", 0x0409, 1252
+  }
+}
