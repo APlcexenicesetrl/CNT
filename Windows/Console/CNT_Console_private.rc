@@ -8,23 +8,23 @@
 // TO CHANGE VERSION INFORMATION, EDIT PROJECT OPTIONS...
 //
 1 VERSIONINFO
-FILEVERSION 1,0,0,14
-PRODUCTVERSION 1,0,0,14
+FILEVERSION 1,0,0,24
+PRODUCTVERSION 1,0,0,24
 FILETYPE VFT_APP
 {
   BLOCK "StringFileInfo"
   {
     BLOCK "040904E4"
     {
-      VALUE "CompanyName", "CNT"
-      VALUE "FileVersion", "1.0.0.14"
-      VALUE "FileDescription", "CNT Console"
-      VALUE "InternalName", "CNT Console Command"
-      VALUE "LegalCopyright", "Copyrights (C) 2024"
-      VALUE "LegalTrademarks", "APlcexenicesetrl"
-      VALUE "OriginalFilename", "Original Filename"
-      VALUE "ProductName", "Product Name"
-      VALUE "ProductVersion", "1.0.0.14"
+      VALUE "CompanyName", ""
+      VALUE "FileVersion", "1.0.0.24"
+      VALUE "FileDescription", "Developed using the Dev-C++ IDE"
+      VALUE "InternalName", ""
+      VALUE "LegalCopyright", ""
+      VALUE "LegalTrademarks", ""
+      VALUE "OriginalFilename", ""
+      VALUE "ProductName", ""
+      VALUE "ProductVersion", "1.0.0.24"
     }
   }
   BLOCK "VarFileInfo"

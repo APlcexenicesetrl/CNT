@@ -40,3 +40,4 @@ You can use 『CNT』 to simplify your development and reduce your development t
 ## Windows Install
 
 **Install CNT on your computer.**
+

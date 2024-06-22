@@ -7,6 +7,6 @@ using namespace std;
 int main(int argc, char** argv) {
 	console console;
 	console.log("APlcexenicesetrl CNT Console [Version 1.0.45.2]\n(C) APlcexenicesetrl CNT All rights reserved\n");
-	
+	console.error("Initialization failed");
 	return 0;
 }
