@@ -1,5 +1,13 @@
-#include <bits/stdc++.h>
-#include "console.cpp"
+// CNT - Main Documnet
+//Copyrights (C) 2024
+//By TaimWay
+
+//Change
+/*
+	1.TaimWay Upload ("First Create") 
+*/
+
+#include "config.h"
 using namespace std;
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
@@ -15,9 +23,10 @@ int main(int argc, char** argv) {
 	
 	//Main
 	while(true){
-		console.wait(2);
-		console.input("Input: ", text);
-		console.wait(2);
+		string a = console.input("Input: ");
+		console.log(a);
+		console.error(a);
+		console.warn(a);
 		console.exit(0);
 	}
 	return 0;
@@ -26,5 +35,8 @@ int main(int argc, char** argv) {
 //Function
 void initialize(){
 	console console;
-	console.log("APlcexenicesetrl CNT Console [Version 1.0.45.2]\n(C) APlcexenicesetrl CNT All rights reserved\n");
+	string copyrightsText = "APlcexenicesetrl CNT Console [Version ";
+	copyrightsText += __consoleVersion__;
+	copyrightsText += "]\n(C) APlcexenicesetrl CNT All rights reserved\n";
+	console.log(copyrightsText);
 }
