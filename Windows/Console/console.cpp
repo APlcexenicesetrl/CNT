@@ -24,7 +24,8 @@ class console {
 
 
 	public:
-		
+		///Config
+
 		////Funciton
 		void log(string text, bool end = true){
 			cout << text;

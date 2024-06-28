@@ -35,6 +35,7 @@ int main(int argc, char** argv) {
 //Function
 void initialize(){
 	console console;
+	system("title CNT Console");
 	string copyrightsText = "APlcexenicesetrl CNT Console [Version ";
 	copyrightsText += __consoleVersion__;
 	copyrightsText += "]\n(C) APlcexenicesetrl CNT All rights reserved\n";
