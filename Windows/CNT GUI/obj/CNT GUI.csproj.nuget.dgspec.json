@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "F:\\APlcexenicesetrl\\TaimWay\\CNT\\Windows\\CNT GUI\\CNT GUI.csproj": {}
+    "F:\\APlcexenicesetrl\\TaimWay\\Project\\CNT\\Windows\\CNT GUI\\CNT GUI.csproj": {}
   },
   "projects": {
-    "F:\\APlcexenicesetrl\\TaimWay\\CNT\\Windows\\CNT GUI\\CNT GUI.csproj": {
+    "F:\\APlcexenicesetrl\\TaimWay\\Project\\CNT\\Windows\\CNT GUI\\CNT GUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\APlcexenicesetrl\\TaimWay\\CNT\\Windows\\CNT GUI\\CNT GUI.csproj",
+        "projectUniqueName": "F:\\APlcexenicesetrl\\TaimWay\\Project\\CNT\\Windows\\CNT GUI\\CNT GUI.csproj",
         "projectName": "CNT GUI",
-        "projectPath": "F:\\APlcexenicesetrl\\TaimWay\\CNT\\Windows\\CNT GUI\\CNT GUI.csproj",
+        "projectPath": "F:\\APlcexenicesetrl\\TaimWay\\Project\\CNT\\Windows\\CNT GUI\\CNT GUI.csproj",
         "packagesPath": "C:\\Users\\taim_\\.nuget\\packages\\",
-        "outputPath": "F:\\APlcexenicesetrl\\TaimWay\\CNT\\Windows\\CNT GUI\\obj\\",
+        "outputPath": "F:\\APlcexenicesetrl\\TaimWay\\Project\\CNT\\Windows\\CNT GUI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "E:\\Program Files (x86)\\Viual Studio Community\\Viual Studio Shared\\NuGetPackages"
+          "D:\\Program Files\\VisualStudio\\share\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\taim_\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -67,7 +67,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -29,24 +29,24 @@ IncludeVersionInfo=1
 SupportXPThemes=0
 CompilerSet=0
 CompilerSettings=0000000000000000000000000
-UnitCount=4
+UnitCount=5
 
 [VersionInfo]
 Major=1
 Minor=0
 Release=0
-Build=24
+Build=47
 LanguageID=1033
 CharsetID=1252
 CompanyName=
-FileVersion=1.0.0.24
+FileVersion=1.0.0.47
 FileDescription=Developed using the Dev-C++ IDE
 InternalName=
 LegalCopyright=
 LegalTrademarks=
 OriginalFilename=
 ProductName=
-ProductVersion=1.0.0.24
+ProductVersion=1.0.0.47
 AutoIncBuildNr=1
 SyncProduct=1
 
@@ -81,7 +81,17 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit4]
-FileName=function.cpp
+FileName=config.h
+CompileCpp=1
+Folder='H' File
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit5]
+FileName=code.cpp
 CompileCpp=1
 Folder=CPP File
 Compile=1

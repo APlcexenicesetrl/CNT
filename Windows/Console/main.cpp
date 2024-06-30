@@ -11,6 +11,9 @@
 using namespace std;
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
+//Value Config
+string user = "root";
+string intoCode;
 
 //Funciton Class
 void initialize();
@@ -18,16 +21,14 @@ void initialize();
 //Main Function
 int main(int argc, char** argv) {
 	console console;
+	strings strings;
+	code code;
 	//Initialize
 	initialize();
 	
 	//Main
-	while(true){
-		string a = console.input("Input: ");
-		console.log(a);
-		console.error(a);
-		console.warn(a);
-		console.exit(0);
+	while(true){		
+		intoCode = console.input(strings.add(user, "> "));
 	}
 	return 0;
 }
@@ -35,9 +36,8 @@ int main(int argc, char** argv) {
 //Function
 void initialize(){
 	console console;
+	strings strings;
 	system("title CNT Console");
-	string copyrightsText = "APlcexenicesetrl CNT Console [Version ";
-	copyrightsText += __consoleVersion__;
-	copyrightsText += "]\n(C) APlcexenicesetrl CNT All rights reserved\n";
-	console.log(copyrightsText);
+	
+	console.log(strings.add("APlcexenicesetrl CNT Console [Version ",strings.add(__consoleVersion__,"]\n(C) APlcexenicesetrl CNT All rights reserved")));
 }

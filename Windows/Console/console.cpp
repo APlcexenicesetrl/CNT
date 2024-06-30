@@ -1,4 +1,4 @@
-// CNT - Config Class Function
+// CNT - Console Class Documnet
 //Copyrights (C) 2024
 //By TaimWay
 
@@ -25,6 +25,7 @@ class console {
 
 	public:
 		///Config
+		vector <string> windows;
 
 		////Funciton
 		void log(string text, bool end = true){
@@ -54,6 +55,42 @@ class console {
 			string input;
 			getline(cin, input);
 			return input;
+		}	
+};
+class strings{
+	private:
+		
+	public:
+		string add(string add1, string add2){
+			return add1 + add2;
+		}
+		int size(string text){
+			return text.size(); 
+		}
+		/*void split(const string& str, const string& split, vector<string>& res)
+		{
+			regex reg(split);
+			sregex_token_iterator pos(str.begin(), str.end(), reg, -1);
+			decltype(pos) end; 
+			for (;pos != end; ++pos)
+			{
+				res.push_back(pos->str());
+			}
+		}*/
+
+};
+class code{
+	private:
+		void getCodeObject(const string& code, vector<string>& ReturnList){
+			/*strings strings;
+			vector <string> Object;
+			strings.split(coder," ", Object);
+			*/
+			ReturnList.push_back("NULL");
+		}
+	public:
+		void run(string code){
+			vector <string> Object;
+			getCodeObject(code, Object);
 		}
 };
-

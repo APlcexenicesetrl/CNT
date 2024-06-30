@@ -1,7 +1,8 @@
 :root{
     --background: #ffffff;
     --color-text: #444444;
-    --header-background: #ffffff;
+    --header-color-background: #f1f1f1;
+    --header-color-text: #212121;
 
     --button-color-text: #efefef;
     --button-color-b1: #0084ff;

@@ -23,7 +23,9 @@
                     </MenuItem>
                 </Menu>
             </Border>
-            <Grid Grid.Row="1"></Grid>
+            <Grid Grid.Row="1">
+                
+            </Grid>
         </Grid>
     </Border>
 </Window>
