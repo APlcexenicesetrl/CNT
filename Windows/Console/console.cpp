@@ -6,10 +6,6 @@
 /*
 	1.TaimWay Upload ("First Create") 
 */
-
-
-
-
 #include <bits/stdc++.h>
 #include "windows.h"
 #include "colorDefine.h"
@@ -57,40 +53,4 @@ class console {
 			return input;
 		}	
 };
-class strings{
-	private:
-		
-	public:
-		string add(string add1, string add2){
-			return add1 + add2;
-		}
-		int size(string text){
-			return text.size(); 
-		}
-		/*void split(const string& str, const string& split, vector<string>& res)
-		{
-			regex reg(split);
-			sregex_token_iterator pos(str.begin(), str.end(), reg, -1);
-			decltype(pos) end; 
-			for (;pos != end; ++pos)
-			{
-				res.push_back(pos->str());
-			}
-		}*/
 
-};
-class code{
-	private:
-		void getCodeObject(const string& code, vector<string>& ReturnList){
-			/*strings strings;
-			vector <string> Object;
-			strings.split(coder," ", Object);
-			*/
-			ReturnList.push_back("NULL");
-		}
-	public:
-		void run(string code){
-			vector <string> Object;
-			getCodeObject(code, Object);
-		}
-};

@@ -10,6 +10,7 @@
 //Head documnet
 #include <bits/stdc++.h>
 #include "console.cpp"
+#include "code.cpp"
 
 
 //Define Class Value

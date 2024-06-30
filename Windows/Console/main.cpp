@@ -10,10 +10,12 @@
 #include "config.h"
 using namespace std;
 
+//git config --global user.name "TaimWay"
+
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 //Value Config
 string user = "root";
-string intoCode;
+string intoCode;.
 
 //Funciton Class
 void initialize();
@@ -29,6 +31,7 @@ int main(int argc, char** argv) {
 	//Main
 	while(true){		
 		intoCode = console.input(strings.add(user, "> "));
+		code.run(intoCode);
 	}
 	return 0;
 }
@@ -39,5 +42,5 @@ void initialize(){
 	strings strings;
 	system("title CNT Console");
 	
-	console.log(strings.add("APlcexenicesetrl CNT Console [Version ",strings.add(__consoleVersion__,"]\n(C) APlcexenicesetrl CNT All rights reserved")));
+	console.log(strings.add("APlcexenicesetrl CNT Console [Version ",strings.add(__consoleVersion__,"]\n(C) APlcexenicesetrl CNT All rights reserved\n")));
 }
