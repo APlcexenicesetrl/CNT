@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CNT GUI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+095852fb1a799409925b86ccee85ef5138e67bf8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+97e8a8a4f309eb2d0038c546f4f67d745f2561d4")]
 [assembly: System.Reflection.AssemblyProductAttribute("CNT GUI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CNT GUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

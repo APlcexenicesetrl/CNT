@@ -1,0 +1,3 @@
+[Config]>
+    "AllowConsoleOutUseIllegal":"false",
+    "ColorOutput":"true"
