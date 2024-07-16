@@ -1,9 +1,14 @@
-# CNT for Python in windows
-# CNT Python Main Document
-# Copyrights (C) 2024-2025
+# APlcexenicesetrl (R) CNT (TM)
+# ██████╗ ███╗   ██╗████████╗
+#██╔════╝ ████╗  ██║╚══██╔══╝
+#██║      ██╔██╗ ██║   ██║   
+#██║      ██║╚██╗██║   ██║   
+#╚██████╗ ██║ ╚████║   ██║   
+# ╚═════╝ ╚═╝  ╚═══╝   ╚═╝   in Python
+# Copyright (C) 2025
 
-import console
-import data
+class cnt:
+    def __init__(self):
+        print("APlcexenicesetrl (R) CNT (TM)\n ██████╗ ███╗   ██╗████████╗ \n██╔════╝ ████╗  ██║╚══██╔══╝\n██║      ██╔██╗ ██║   ██║   \n██║      ██║╚██╗██║   ██║   \n╚██████╗ ██║ ╚████║   ██║   \n ╚═════╝ ╚═╝  ╚═══╝   ╚═╝   in Python\nCopyright (C) 2025")
 
-console = console.cntConsole()
-print('APlcexenicesetrl CNT Console [Version ' + data.version + ']\n(C) APlcexenicesetrl CNT All rights reserved')
+console = cnt()

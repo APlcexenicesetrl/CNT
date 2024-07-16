@@ -1,79 +1,91 @@
 #include <bits/stdc++.h>
 #include "colorDefine.h"
+#include "windows.h"
 using namespace std;
 
-class winCodes{
+#ifndef CNTSTRINGS_CPP
+#define CNTSTRINGS_CPP
+class cntstrings
+{
+public:
+    string add(const string add1, const string add2)
+    {
+        return add1 + add2;
+    }
+    bool isAllSpace(const string Context)
+    {
+        for (int i = 0; i < Context.size(); ++i)
+            if (Context[i] == ' ')
+                return false;
+        return true;
+    }
+};
+#endif
+#ifndef WINCODE_CPP
+#define WINCODE_CPP
+
+class winCode{
     private:
+        cntstrings strings;
         void setColor(int colorCode)
         {
             HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
             SetConsoleTextAttribute(hConsole, colorCode);
         }
-        string add(const string add1, const string add2)
-        {
-            return add1 + add2;
+    public:
+        string getTime(){
+            auto now = chrono::system_clock::now();
+            time_t now_time_t = chrono::system_clock::to_time_t(now);
+            tm now_tm = *localtime(&now_time_t);
+            ostringstream timeStream;
+            timeStream << put_time(&now_tm, "%m/%d/%y %H:%M:%S");
+            return timeStream.str();
         }
-    public: 
         void winError(const string codeName, const string codeTip)
         {
             setColor(RED);
-            cout << "「" << codeName << "」代码从指令集中返回了一个异常并抛入 控制台 中，请检查你输入的指令参数是否有问题，若并没有问题请请咨询开发商，并给出解决方案。" << endl << "信息返回:「" << codeTip << "」" << endl << "「CNT for console」" ;
+            cout << "The \'" << codeName << "\' code returns an exception from the instruction set and throws it. Control Taichung, check to see if there is a problem with the instruction parameters you entered. If there is no problem, consult the developer and provide a solution." << endl
+                << "Message return: " << codeTip << endl
+                << "[CNT for console]";
             setColor(Recovery);
         }
-        
-}
-
-class cntconfig{
-    private:
-        bool CheckAuthenticityOfConfigurationFile(const string configText)
+        void console(const string typeInformation, const string outText, const int mode)
         {
-            /*
-                The original text:
-                    [Config]>
-                        "AllowConsoleOutUseIllegal":"false",
-                        "ColorOutput":"true"
-                Later text:
-                    [Config]>"AllowConsoleOutUseIllegal":"false","ColorOutput":"true"
-                Ideas:
-                    1.整个字符串不能少于 11 个字符:
-                        [A]>"B":"C"
-                        ^^^^^^^^^^^ // 11 个字符
-                    2.一定有 "[Text]>" 在开头
-            */
-            if(configText.size() < 11) return false;
-            //Header
-            int firsk;
-            for (int i = 0; i < configText.size() ; ++i) if(configText[i] == '>') firsk = i;
-            if(firsk < 4) return false;
-            if(!(configText[0] == '[' && configText[firsk - 1] == ']')) return false;
-            return true;
-        }
-    public:
-        string getConfigText(const string path, const string configName)
-        {
-            ifstream configFile(add(configName, ".cntconfig"));
-            string fileText = "", returnText = "", line = "";
-            if (!configFile.is_open())
+            if (typeInformation == "undefined")
             {
-                return "null";
+                winError("console", "Invalid words should not be 'undefined'");
+                return;
             }
-            while (getline(configFile, line))
+            if (strings.isAllSpace(outText))
             {
-                fileText += line;
+                winError("console", "The prompt can not be all white space");
             }
-            configFile.close();
-            // Spilt Text
-            for (int i = 0; i < fileText.size(); ++i)
+            if (mode <= 2 && mode >= 0)
             {
-                if (fileText[i] != ' ')
-                    returnText += fileText[i];
+                winError("console", "The pattern values do not match");
             }
-            return returnText;
+            // get Time & Date and change string
+            string dateTip = getTime();
+            
+            switch (mode)
+            {
+            case 0:
+                break;
+            case 1:
+                setColor(RED);
+                break;
+            case 2:
+                setColor(YELLOW);
+            default:
+                winError("console", "You Can't have a pattern value less than 0 and greater than 2");
+                break;
+            }
+            cout << "[" << dateTip << "][" << typeInformation << "] " << outText << endl;
         }
-        string getConfigObject(const string configText, const string object)
-        {
-            if (!CheckAuthenticityOfConfigurationFile)
-                return "null";
-            // Any Code
+        void winUndefined(const string codeName){
+            setColor(RED);
+            cout << "\"" << codeName << "\" is not CNT internal code or native code, please check that your code is declared, and check that your code is not misspelled." << endl;
+            setColor(Recovery);
         }
-}
+};
+#endif
