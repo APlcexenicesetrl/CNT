@@ -1,16 +1,15 @@
 #include <bits/stdc++.h>
 #include "cntconfig.h"
 #include "winCode.cpp"
+#include "log.cpp"
 using namespace std;
+using namespace cnt;
 
 class code{
     private:
         winCode console;
         cntstrings strings;
-        void version(){
-            cout << "CNT Version: " << __CNT_CONSOLE_VERSION__ << ' ' << __OperatingSystemVersion__ <<endl;
-            return ;
-        }
+        cntLogs log;
         void help(const string codeHelp)
         {
             string helpText = "";
@@ -36,13 +35,23 @@ class code{
             cout << helpText << endl;
             return;
         }
-    public:
+        void surprise(const string OpenKey){
+            if (OpenKey == "TaimWay" || OpenKey == "taim_way"){
+                console.setColor(GREEN);
+                string Copyright = "";
+                cout << Copyright << endl;
+                console.setColor(WHITE);
+            }
+        }
+    public: 
         void runCode(const string codeText, const vector<string> codeParameter)
         {
             try{
-                if(codeText == "version") version();
+                if(codeText == "version") cout << "CNT Version: " << __CNT_CONSOLE_VERSION__ << ' ' << __OperatingSystemVersion__ << endl;
                 else if(codeText == "help") help(codeParameter[0]);
                 else if(codeText == "exit") exit(0);
+                else if(codeText == "log") log.list();
+                else if(codeText == "copyright") surprise(codeParameter[0]);
                 else console.winUndefined(codeText);
             }
             catch(const exception& err){
