@@ -3,7 +3,7 @@
 <h1>CNT</h1>
 A portable program for development and use.<br><br>
 
-<img src="./wallpage.png" height="300px"/><br>
+<img src="./wallpage.png" height="450px"/><br>
 
 [![Github](https://img.shields.io/badge/CNT-Github-gray.svg)](https://github.com/TaimWay/CNT) ![Developers](https://img.shields.io/badge/Developers-TaimWay-red.svg) ![Version](https://img.shields.io/badge/version-1.1.5.49-brightgreen.svg)  ![Build Status](https://img.shields.io/badge/build%20Status-Active,%20open%20source-brightgreen.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/TaimWay/CNT/blob/main/LICENSE)
 
