@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\APlcexenicesetrl\\TaimWay\\Project\\CNT\\Windows\\CNT GUI\\CNT GUI.csproj",
+      "projectUniqueName": "F:\\APlcexenicesetrl\\TaimWay\\CNT\\Windows\\CNT GUI\\CNT GUI.csproj",
       "projectName": "CNT GUI",
-      "projectPath": "F:\\APlcexenicesetrl\\TaimWay\\Project\\CNT\\Windows\\CNT GUI\\CNT GUI.csproj",
+      "projectPath": "F:\\APlcexenicesetrl\\TaimWay\\CNT\\Windows\\CNT GUI\\CNT GUI.csproj",
       "packagesPath": "C:\\Users\\taim_\\.nuget\\packages\\",
-      "outputPath": "F:\\APlcexenicesetrl\\TaimWay\\Project\\CNT\\Windows\\CNT GUI\\obj\\",
+      "outputPath": "F:\\APlcexenicesetrl\\TaimWay\\CNT\\Windows\\CNT GUI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Program Files\\VisualStudio\\share\\NuGetPackages"
